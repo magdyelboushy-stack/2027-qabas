@@ -1,0 +1,91 @@
+{
+  "appTitle": "تطبيق قبس",
+  "settings": "الإعدادات",
+  "language": "اللغة",
+  "arabic": "العربية",
+  "english": "English",
+  "advancedRepeat": "التكرار المتقدم",
+  "advancedRepeatDesc": "تخصيص تكرار الآيات والمقاطع",
+  "advancedRepeatActive": "تكرار مقطع مخصص نشط",
+  "fromAyah": "من آية",
+  "toAyah": "إلى آية",
+  "ayahRepeatCount": "تكرار كل آية",
+  "blockRepeatCount": "تكرار المقطع كاملاً",
+  "startRecitation": "بدء التلاوة",
+  "noInternet": "بدون إنترنت",
+  "recitationOfflineMessage": "لن تتمكن من تشغيل التلاوات الآن. يمكنك فتح التنزيلات التي على جهازك.",
+  "ok": "حسناً",
+  "goToDownloads": "الانتقال إلى التنزيلات",
+  "failedSendMessage": "فشل إرسال الرسالة",
+  "settingsSavedSuccessAdhan": "تم حفظ الإعدادات بنجاح وتحديث الأذان ✅",
+  "calculationMethod": "طريقة الحساب",
+  "egyptian": "الهيئة المصرية العامة للمساحة",
+  "ummAlQura": "أم القرى (السعودية)",
+  "muslimWorldLeague": "رابطة العالم الإسلامي",
+  "karachi": "جامعة العلوم الإسلامية بكراتشي",
+  "northAmerica": "أمريكا الشمالية (ISNA)",
+  "dubai": "دبي",
+  "kuwait": "الكويت",
+  "qatar": "قطر",
+  "turkey": "تركيا",
+  "cancelingDownloads": "جاري إلغاء التحميلات...",
+  "noInternetConnection": "لا يوجد اتصال بالإنترنت. يرجى التحقق من الشبكة.",
+  "allSurahDownloaded": "جميع السور محملة بالفعل",
+  "downloadConfirmation": "تأكيد التحميل",
+  "willDownloadSurah": "سيتم تحميل {count} سورة",
+  "@willDownloadSurah": {
+    "description": "Download confirmation message with count of surahs",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10"
+      }
+    }
+  },
+  "preview": "معاينة",
+  "retry": "إعادة",
+  "all": "الكل",
+  "lessons": "دروس دينية",
+  "gizaVoices": "شيوخ الجيزة",
+  "tartil": "ترتيل",
+  "tajweed": "تجويد",
+  "muteSound": "إيقاف الصوت",
+  "openApp": "فتح التطبيق",
+  "stop": "إيقاف",
+  "pause": "إيقاف مؤقت",
+  "play": "تشغيل",
+  "signInWithGoogle": "تسجيل الدخول بواسطة Google",
+  "fastingDays": "أيام الصيام",
+  "missedDays": "الأيام الفائتة",
+  "close": "إغلاق",
+  "contactUs": "تواصل معنا",
+  "updateLink": "رابط التحديث",
+  "targetCount": "العدد المستهدف",
+  "reset": "تصفير",
+  "notificationDiagnosticsScreen": "تشخيص الإشعارات",
+  "generalNotificationStatus": "حالة الإشعارات العامة",
+  "scheduledNotificationsCount": "عدد الإشعارات المجدولة",
+  "scheduledCountLabel": "{count} إشعار",
+  "@scheduledCountLabel": {
+    "description": "Label for scheduled notifications count",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+  "rescheduleNotificationsSuccess": "✅ تم إعادة جدولة الإشعارات بنجاح",
+  "rescheduleNotificationsError": "❌ خطأ أثناء الجدولة: {error}",
+  "@rescheduleNotificationsError": {
+    "description": "Error message when rescheduling notifications",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Connection error"
+      }
+    }
+  },
+  "rescheduleNotifications": "إعادة جدولة الإشعارات",
+  "updateInfo": "تحديث المعلومات"
+}

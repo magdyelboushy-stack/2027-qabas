@@ -1,0 +1,53 @@
+import 'package:quran/quran.dart' as quran;
+
+class HizbQuarterUtils {
+  static List<int> _hizbStartPages = [];
+  static List<int> _quarterStartPages = [];
+
+  static void _init() {
+    if (_hizbStartPages.isNotEmpty) return;
+    
+    _hizbStartPages = List.filled(60, 1);
+    _quarterStartPages = List.filled(240, 1);
+    
+    int currentHizb = 0;
+    int currentQuarter = 0;
+
+    for (int surah = 1; surah <= 114; surah++) {
+      int verseCount = quran.getVerseCount(surah);
+      for (int ayah = 1; ayah <= verseCount; ayah++) {
+        int page = quran.getPageNumber(surah, ayah);
+        
+        int h = quran.getHizbNumber(surah, ayah);
+        // The `quran` package uses `getQuarter` which returns 1..240
+        int q = quran.getQuarter(surah, ayah); 
+
+        if (h > currentHizb) {
+          _hizbStartPages[h - 1] = page;
+          currentHizb = h;
+        }
+        if (q > currentQuarter) {
+          _quarterStartPages[q - 1] = page;
+          currentQuarter = q;
+        }
+      }
+    }
+  }
+
+  static int getHizbStartPage(int hizb) {
+    _init();
+    if (hizb < 1 || hizb > 60) return 1;
+    return _hizbStartPages[hizb - 1];
+  }
+
+  static int getQuarterStartPage(int quarter) {
+    _init();
+    if (quarter < 1 || quarter > 240) return 1;
+    return _quarterStartPages[quarter - 1];
+  }
+}
+
+void main() {
+  HizbQuarterUtils._init();
+  print("Hizb 2 start page: ${HizbQuarterUtils.getHizbStartPage(2)}");
+}

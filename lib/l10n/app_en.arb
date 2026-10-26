@@ -1,0 +1,91 @@
+{
+  "appTitle": "Qabas App",
+  "settings": "Settings",
+  "language": "Language",
+  "arabic": "العربية",
+  "english": "English",
+  "advancedRepeat": "Advanced Repeat",
+  "advancedRepeatDesc": "Customize ayahs and block repeat",
+  "advancedRepeatActive": "Custom block repeat active",
+  "fromAyah": "From Ayah",
+  "toAyah": "To Ayah",
+  "ayahRepeatCount": "Ayah Repeat",
+  "blockRepeatCount": "Block Repeat",
+  "startRecitation": "Start Recitation",
+  "noInternet": "No Internet",
+  "recitationOfflineMessage": "You won't be able to play recitations now. You can open the downloads on your device.",
+  "ok": "OK",
+  "goToDownloads": "Go to Downloads",
+  "failedSendMessage": "Failed to send message",
+  "settingsSavedSuccessAdhan": "Settings saved successfully and adhan updated ✅",
+  "calculationMethod": "Calculation Method",
+  "egyptian": "Egyptian General Authority of Surveying",
+  "ummAlQura": "Um Al-Qura (Saudi Arabia)",
+  "muslimWorldLeague": "Muslim World League",
+  "karachi": "Karachi University",
+  "northAmerica": "North America (ISNA)",
+  "dubai": "Dubai",
+  "kuwait": "Kuwait",
+  "qatar": "Qatar",
+  "turkey": "Turkey",
+  "cancelingDownloads": "Canceling downloads...",
+  "noInternetConnection": "No internet connection. Please check the network.",
+  "allSurahDownloaded": "All chapters are already downloaded",
+  "downloadConfirmation": "Download Confirmation",
+  "willDownloadSurah": "Will download {count} chapter(s)",
+  "@willDownloadSurah": {
+    "description": "Download confirmation message with count of surahs",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10"
+      }
+    }
+  },
+  "preview": "Preview",
+  "retry": "Retry",
+  "all": "All",
+  "lessons": "Lessons",
+  "gizaVoices": "Giza Voices",
+  "tartil": "Tartil",
+  "tajweed": "Tajweed",
+  "muteSound": "Mute Sound",
+  "openApp": "Open App",
+  "stop": "Stop",
+  "pause": "Pause",
+  "play": "Play",
+  "signInWithGoogle": "Sign In with Google",
+  "fastingDays": "Fasting Days",
+  "missedDays": "Missed Days",
+  "close": "Close",
+  "contactUs": "Contact Us",
+  "updateLink": "Update Link",
+  "targetCount": "Target Count",
+  "reset": "Reset",
+  "notificationDiagnosticsScreen": "Notification Diagnostics",
+  "generalNotificationStatus": "General Notification Status",
+  "scheduledNotificationsCount": "Scheduled Notifications Count",
+  "scheduledCountLabel": "{count} notification(s)",
+  "@scheduledCountLabel": {
+    "description": "Label for scheduled notifications count",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+  "rescheduleNotificationsSuccess": "✅ Notifications rescheduled successfully",
+  "rescheduleNotificationsError": "❌ Rescheduling error: {error}",
+  "@rescheduleNotificationsError": {
+    "description": "Error message when rescheduling notifications",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Connection error"
+      }
+    }
+  },
+  "rescheduleNotifications": "Reschedule Notifications",
+  "updateInfo": "Update Info"
+}
