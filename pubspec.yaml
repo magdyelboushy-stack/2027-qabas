@@ -113,8 +113,6 @@ flutter:
     - assets/images/mushaf/
     - assets/dbs/
     - assets/welcome/
-    - .env.local
-    - .env.production
 
 
 

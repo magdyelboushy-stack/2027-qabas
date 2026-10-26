@@ -52,13 +52,18 @@ class SurahDatabaseService {
   }
 
   Future<void> _doInitialize() async {
-    final dbDir = await _getDbDirectory();
-    for (final db in _allDbs) {
-      await _copyDatabaseIfNeeded(db, dbDir);
+    try {
+      final dbDir = await _getDbDirectory();
+
+      // Keep startup light: the core Quran database is needed for ID lookups.
+      // Larger tafsir/grammar databases are copied only when first requested.
+      await _copyDatabaseIfNeeded(_quranDb, dbDir);
+      _initialized = true;
+      debugPrint('✅ SurahDatabaseService initialized — core database ready');
+    } finally {
+      // Allow a later retry if initialization fails.
+      _initFuture = null;
     }
-    _initialized = true;
-    _initFuture = null;
-    debugPrint('✅ SurahDatabaseService initialized — ${_allDbs.length} databases ready');
   }
 
   Future<String> _getDbDirectory() async {
@@ -91,7 +96,10 @@ class SurahDatabaseService {
     
     final dbDir = await _getDbDirectory();
     final dbPath = p.join(dbDir, dbName);
-    
+
+    // Optional databases are copied on demand, not all during app startup.
+    await _copyDatabaseIfNeeded(dbName, dbDir);
+
     if (!File(dbPath).existsSync()) {
       throw Exception('Database not found: $dbPath');
     }
