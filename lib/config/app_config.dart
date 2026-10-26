@@ -24,7 +24,7 @@ class AppConfig {
     if (isLocal) {
       return 'http://10.0.2.2/MihrabApp_API/api';
     }
-    return 'https://mihrab-app.alwaysdata.net/api';
+    return 'https://magdymohamed1929.helioho.st/backend/api';
   }
 
   // Decode obfuscated or plain URL
